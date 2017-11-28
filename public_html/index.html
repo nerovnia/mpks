@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Профіль колії</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="js/bootstrap/css/bootstrap.min.css">
+
+        <script src="js/jquery-3.2.1.js"></script>
+        <script src="js/bootstrap/js/bootstrap.js"></script>
+        <script src="js/enum.js"></script>
+        
+        <script src="http://fabricjs.com/lib/fabric.js"></script>
+        <!-- <script src="js/fabric.js"></script> -->
+        <script src="js/profilputi.js"></script>
+    </head>
+    <body>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"> Елементи к/мережі </button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a id="opks" href="#"> З/б опора к/мережі </a></li>
+                <li><a id="opksk" href="#"> З/б опора к/мережі консольна </a></li>
+                <li><a id="opkskf" href="#"> З/б опора к/мережі фіксуюча </a></li>
+                <li><a id="opkskao" href="#"> З/б анкерна опора к/мережі з одинарною відтяжкою</a></li>
+                <li><a id="opkskad" href="#"> З/б анкерна опора к/мережі з подвійною відтяжкою</a></li>
+                <li><a id="opkskmo" href="#"> Металева опора к/мережі </a></li>
+                <li><a id="opkskmd" href="#"> Двопутна консоль на металевій опорі </a></li>
+                <li><a id="opkskf" href="#"> Жорстка поперечина </a></li>
+                <li><a id="opkskf" href="#"> Гнучка поперечина </a></li>
+                <li><a id="opkskf" href="#"> Земля </a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"> Залізничні ділянки</button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#"> Пряма електрифікована ділянка шляху </a></li>
+                <li><a href="#"> Крива електрифікована ділянка шляху </a></li>
+                <li><a href="#"> Пряма неелектрифікована ділянка шляху </a></li>
+                <li><a href="#"> Крива неелектрифікована ділянка шляху </a></li>
+                <li><a href="#"> Тупик </a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"> Роз'єднувачі </button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span  >
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#"> Роз'єднувач з приводом ТК нормально включений </a></li>
+                <li><a href="#"> Роз'єднувач з приводом ТК нормально виключений </a></li>
+                <li><a href="#"> Роз'єднувач з приводом ТК нормально включений з заземленням </a></li>
+                <li><a href="#"> Роз'єднувач з приводом ТК нормально виключений з заземленням </a></li>
+                <li><a href="#"> Роз'єднувач з ручним керуванням  нормально включений </a></li>
+                <li><a href="#"> Роз'єднувач з ручним керуванням  нормально виключений </a></li>
+                <li><a href="#"> Роз'єднувач з ручним керуванням  нормально включений  з заземленням </a></li>
+                <li><a href="#"> Роз'єднувач з ручним керуванням  нормально виключений  з заземленням </a></li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary"> Інші </button>
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li><a href="#"> Світлофор </a></li>
+                <li><a href="#"> Семафор </a></li>
+            </ul>
+        </div>
+        <!--<div id="content"></div>-->
+        <canvas id="c" width="4000" height="400"></canvas>
+    </body>
+</html>
